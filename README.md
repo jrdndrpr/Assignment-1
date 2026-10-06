@@ -1,16 +1,26 @@
 # Fermentation Process Monitor
 
-A Python-based monitoring tool for analyzing fermentation batch data, evaluating operating-condition compliance, and automatically generate process figures and tables.
+A Python based monitoring tool for analyzing fermentation batch data, evaluating operating condition compliance, and automatically generating process figures and tables.
 
 ## Overview
 
-X
+This project developed a Python tool to monitor fermentation processes from multiple batches. The project is capable of extracting individual batches from a provided dataset, where it can then identify measurements that fall within the desired pH and temperature operating ranges. The project will produce figures and performance summaries of the batches.
+
+The monitor system evaluates in two different operating modes (A and B), each with their own acceptable pH and temperature ranges.
 
 ## Features
 
 The `BioprocessMonitor` class allows the user to:
 
-X
+* Load fermentation process data from the provided CSV file.
+* Extract data corresponding to each batch sample.
+* Identify pH measurements within the acceptable operating range.
+* Identify temperature measurements within an acceptable operating range.
+* Generate a 2 × 2 process monitoring dashboard.
+* Visualize glucose, biomass, product concentration, temperature, pH, and dissolved oxygen as functions of time.
+* Determine if operating conditions are within pH and temperature compliance.
+* Determine the final product concentration for each batch.
+* Export batch-level summary results to CSV files.
 
 ## Technologies Used
 
