@@ -276,8 +276,10 @@ class BioprocessMonitor:
 
             if axis.get_legend_handles_labels()[1]:
                 axis.legend(
-                    labelspacing=0.2,
+                    labelspacing=0.15,
                     handlelength=0.75,
+                    handletextpad=0.4,
+                    borderpad=0.3,
                     loc="upper right"
                 )
 
